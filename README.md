@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# NextJobMatch
 
-## Getting Started
+**Find jobs that actually match your skills, goals, and preferences.** NextJobMatch
+uses AI to filter out the noise so you only see roles worth your time — and you stay
+in control of what gets through.
 
-First, run the development server:
+This repository contains the **NextJobMatch marketing site**: a fast, SEO-friendly
+landing page built with Next.js (App Router) and Tailwind CSS, including a blog.
+
+## Highlights
+
+- **Modern Next.js App Router** site with server components and file-based routing.
+- **SEO-ready out of the box** — generated `sitemap.ts` and `robots.ts`, Open Graph
+  metadata, and a content-driven blog under `app/blog`.
+- **Conversion-focused landing page** composed of clear sections: Hero, Problem,
+  Solution, Value, Workflow, Impact, Trust and CTA.
+- **Analytics-aware** — Google Analytics helper (`lib/gtag.ts`) and a scroll-depth
+  tracker component.
+- **Styled with Tailwind CSS** and the Geist font.
+
+## Tech stack
+
+Next.js · TypeScript · React · Tailwind CSS
+
+## Getting started
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. Edit
+`app/page.tsx` and the components in `components/` — the page hot-reloads as you save.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+app/          App Router pages, layout, blog, sitemap & robots
+components/    Landing-page sections (Hero, Problem, Solution, …)
+lib/          Site config (lib/site.ts), blog helpers, analytics
+public/        Static assets
+```
 
-## Learn More
+## Build & deploy
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The site deploys cleanly to any Next.js host (e.g. Vercel).
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## License
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+All rights reserved unless a license file is added.
